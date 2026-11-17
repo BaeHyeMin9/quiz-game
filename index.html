@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>웹기초 퀴즈 챌린지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="quiz">
+
+        <!-- 머리글 -->
+        <header class="quiz-header">
+            <h1>🧠 웹기초 퀴즈</h1>
+            <p class="best-score">최고 점수: 0점</p>
+        </header>
+
+        <!-- 진행 표시 -->
+        <div class="progress-area">
+            <p class="progress-text">1 / 10</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- 문제 카드 -->
+        <section class="question-card">
+            <h2 class="question-text">문제가 여기에 나옵니다.</h2>
+
+            <!-- 선택지 버튼(.choice-btn)은 JavaScript가 만들어서 넣는다 -->
+            <div class="choice-list"></div>
+
+            <p class="feedback"></p>
+        </section>
+
+        <!-- 아래쪽: 점수 / 다음 문제 -->
+        <footer class="quiz-footer">
+            <p class="score-text">현재 점수 0점</p>
+            <button class="next-btn" type="button" disabled>다음 문제</button>
+        </footer>
+    </main>
+
+    <!-- 결과 창 -->
+    <div class="modal">
+        <div class="modal-box">
+            <div class="result-grade">🏆 퀴즈 마스터</div>
+            <p class="result-score">0점</p>
+            <p class="result-detail">10문제 중 0문제 정답</p>
+            <p class="result-record"></p>
+            <button class="restart-btn" type="button">다시 하기</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
